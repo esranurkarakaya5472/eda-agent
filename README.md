@@ -1,33 +1,18 @@
-<div align="center">
+# EDA Agent
+**Otonom Veri Bilimi ve EDA (Keşifçi Veri Analizi) Hattı**
 
-# 🤖 EDA Agent
-**CSV yükle → AI analiz etsin, temizlesin, görselleştirsin.**
+EDA Agent, ham veri setlerini aksiyon alınabilir içgörülere dönüştüren otonom bir araçtır. Veri profilleme, temizleme, görselleştirme ve yapay zeka destekli analiz süreçlerini otomatikleştirir.
 
-[![Python](https://img.shields.io/badge/Python-3.10+-blue?style=flat-square)](https://python.org)
-[![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=flat-square)](https://streamlit.io)
-[![Gemini AI](https://img.shields.io/badge/Gemini_2.5-8E44AD?style=flat-square)](https://ai.google.dev)
+###  Temel Yetenekler
+* **Otonom Profilleme ve Temizleme:** Aykırı değerleri, eksik verileri otomatik tespit eder ve temizler.
+* **Akıllı Gösterge Paneli:** Plotly ile 9+ interaktif, dark-mode grafik.
+* **Yapay Zeka Entegrasyonu:** Google Gemini destekli yönetici özetleri ve "verinle sohbet et" özelliği.
+* **Üretim Standartlarında:** 67 birim testi (unit test) ile doğrulanmış, sağlam ve ölçeklenebilir altyapı.
 
-</div>
+### 🛠 Teknik Yığın (Tech Stack)
+Python | Streamlit | Google Gemini 2.5 | Plotly | Pandas | Pytest
 
-Bir CSV dosyasını otomatik olarak analiz eden, temizleyen ve interaktif dashboard'a dönüştüren otonom bir veri zekası aracı. Google Gemini AI entegrasyonu ile Türkçe yönetici özeti ve veriyle sohbet özelliği sunar.
-
-## Kurulum
-
-```bash
-pip install -r requirements.txt
-echo "GEMINI_API_KEY=your_key" > .env
-```
-
-## Kullanım
-
-```bash
-python -m streamlit run app.py   # Web arayüzü
-python main.py veri.csv          # CLI
-python main.py --watch           # Klasör izleme modu
-```
-
-## Testler
-
-```bash
-python -m pytest tests/ -v
-```
+### ⚙️ Hızlı Başlangıç
+1. Bağımlılıkları yükleyin: `pip install -r requirements.txt`
+2. `.env` dosyanızı oluşturup `GOOGLE_API_KEY` anahtarınızı ekleyin.
+3. Uygulamayı çalıştırın: `streamlit run app.py`
